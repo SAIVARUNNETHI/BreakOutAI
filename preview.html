@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview Data</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Preview Uploaded Data</h1>
+    </div>
+    <div class="container">
+        <h2>Data Preview</h2>
+        {{ preview|safe }}
+        <form action="/process-query" method="post">
+            <input type="hidden" name="filepath" value="{{ filepath }}">
+            <label for="query">Enter Query:</label>
+            <input type="text" id="query" name="query" placeholder="e.g., Get email of {entity}" required>
+            <button type="submit">Process Query</button>
+        </form>
+    </div>
+    <div class="footer">© 2024 AI Agent Project</div>
+</body>
+</html>

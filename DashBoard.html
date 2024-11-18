@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>AI Agent Dashboard</h1>
+    </div>
+    <div class="container">
+        <h2>Upload Your File</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+    <div class="footer">© 2024 AI Agent Project</div>
+</body>
+</html>
