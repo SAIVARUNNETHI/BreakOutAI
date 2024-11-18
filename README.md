@@ -29,3 +29,4 @@ For local processing (app2.py), run:
 python app2.py
 This version doesn’t require API keys.
 
+Video link :  https://youtu.be/AIvTywkLcug
